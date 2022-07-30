@@ -20,13 +20,13 @@ container.
 ### Build
 
 ```
-docker build -t karanveersp/fetch_data:latest .
+docker build -t username/fetch_data:latest .
 ```
 
 ## Push
 
 ```
-docker push karanveersp/fetch_data:latest
+docker push username/fetch_data:latest
 ```
 
 ## Pulling and using the image on target environment
@@ -34,13 +34,13 @@ docker push karanveersp/fetch_data:latest
 ### Pull
 
 ```
-docker pull karanveersp/fetch_data:latest
+docker pull username/fetch_data:latest
 ```
 
 ### Run to initialize container
 
 ```
-docker run --env-file .env --name fetch_ethusd karanveersp/fetch_data:latest ETHUSD
+docker run --env-file .env --name fetch_ethusd username/fetch_data:latest ETHUSD
 ```
 
 ### Subsequent runs
