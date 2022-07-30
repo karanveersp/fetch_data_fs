@@ -40,5 +40,5 @@ docker pull username/fetch_data:latest
 ### Run
 
 ```
-docker run --rm --env-file .env --name fetch_ethusd username/fetch_data:latest ETHUSD > ~/fetch_eth.log
+docker run --rm --env-file .env username/fetch_data:latest ETHUSD > ~/fetch_eth.log
 ```
