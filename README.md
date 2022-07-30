@@ -37,22 +37,8 @@ docker push username/fetch_data:latest
 docker pull username/fetch_data:latest
 ```
 
-### Run to initialize container
+### Run
 
 ```
-docker run --env-file .env --name fetch_ethusd username/fetch_data:latest ETHUSD
-```
-
-### Subsequent runs
-
-Schedule the following command on the local system to run periodically.
-
-```
-docker start fetch_ethusd
-```
-
-Inspect the last execution log with
-
-```
-docker logs fetch_ethusd
+docker run --rm --env-file .env --name fetch_ethusd username/fetch_data:latest ETHUSD > ~/fetch_eth.log
 ```
