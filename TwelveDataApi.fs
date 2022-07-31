@@ -6,7 +6,7 @@ open System
 open Queries
 
 
-let apiKey = Environment.GetEnvironmentVariable("API_KEY")
+let apiKey = Environment.GetEnvironmentVariable("TWELVE_DATA_API_KEY")
 
 let getAsync (client: HttpClient) (url: string) =
     task {

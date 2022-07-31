@@ -3,3 +3,5 @@ obj/
 .env
 *.json
 *.csv
+
+.fake
